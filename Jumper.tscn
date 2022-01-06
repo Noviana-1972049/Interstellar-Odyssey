@@ -86,6 +86,7 @@ scale = Vector2( 3.39063, 2.22812 )
 [node name="eiwow" type="Node" parent="."]
 
 [node name="points" type="Line2D" parent="eiwow"]
+visible = false
 z_index = -2
 z_as_relative = false
 points = PoolVector2Array( 8, 8 )
