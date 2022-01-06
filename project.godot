@@ -14,6 +14,10 @@ config/name="Interstellar Odyssey"
 run/main_scene="res://Startmenu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+HighScore="*res://highScore.gd"
+
 [display]
 
 window/size/width=480
