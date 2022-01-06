@@ -152,11 +152,11 @@ texture = ExtResource( 6 )
 
 [node name="startButton" type="Button" parent="."]
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.335
 margin_left = 137.0
 margin_top = 467.0
 margin_right = -141.0
-margin_bottom = -327.0
+margin_bottom = 240.91
 theme = ExtResource( 9 )
 text = "Start Game"
 __meta__ = {
@@ -165,11 +165,11 @@ __meta__ = {
 
 [node name="quitButton" type="Button" parent="."]
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.339
 margin_left = 138.0
 margin_top = 555.0
 margin_right = -140.0
-margin_bottom = -239.0
+margin_bottom = 325.494
 theme = ExtResource( 9 )
 text = "Quit"
 __meta__ = {

@@ -1,9 +1,10 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://menu.gd" type="Script" id=1]
 [ext_resource path="res://tema hero.wav" type="AudioStream" id=2]
 [ext_resource path="res://startmenu.theme" type="Theme" id=3]
 [ext_resource path="res://Assets/GameOver.png" type="Texture" id=4]
+[ext_resource path="res://label.theme" type="Theme" id=5]
 [ext_resource path="res://Assets/planet3.png" type="Texture" id=6]
 [ext_resource path="res://Assets/planet2.png" type="Texture" id=7]
 [ext_resource path="res://Assets/planet6.png" type="Texture" id=8]
@@ -11,6 +12,8 @@
 [ext_resource path="res://Assets/planet7.png" type="Texture" id=10]
 [ext_resource path="res://Assets/planet5.png" type="Texture" id=11]
 [ext_resource path="res://Assets/planet4.png" type="Texture" id=12]
+[ext_resource path="res://highscore.theme" type="Theme" id=13]
+[ext_resource path="res://yourscore.theme" type="Theme" id=14]
 
 [sub_resource type="Shader" id=4]
 code = "shader_type canvas_item;
@@ -135,9 +138,9 @@ texture = ExtResource( 6 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 143.0
-margin_top = 367.0
+margin_top = 464.0
 margin_right = -135.0
-margin_bottom = 221.0
+margin_bottom = 318.0
 theme = ExtResource( 3 )
 text = "Try Again"
 __meta__ = {
@@ -148,9 +151,9 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 142.0
-margin_top = 449.0
+margin_top = 542.0
 margin_right = -136.0
-margin_bottom = 304.0
+margin_bottom = 397.0
 theme = ExtResource( 3 )
 text = "Quit"
 __meta__ = {
@@ -189,21 +192,48 @@ anchor_left = 0.5
 anchor_top = 0.398
 anchor_right = 0.5
 anchor_bottom = 0.398
-margin_left = -35.0
-margin_top = -6.89203
-margin_right = 39.0
-margin_bottom = 7.10797
+margin_left = 24.0
+margin_top = 84.108
+margin_right = 98.0
+margin_bottom = 110.108
+theme = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.398
+anchor_right = 0.5
+anchor_bottom = 0.398
+margin_left = -161.0
+margin_top = -21.892
+margin_right = 150.0
+margin_bottom = 49.108
+theme = ExtResource( 5 )
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-margin_left = 194.0
-margin_top = 309.0
-margin_right = 294.0
-margin_bottom = 323.0
-text = "Your Highscore:"
+margin_left = 147.0
+margin_top = 421.0
+margin_right = 315.0
+margin_bottom = 449.0
+theme = ExtResource( 3 )
+text = "Highscore:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YourScore" type="Label" parent="CanvasLayer"]
+margin_left = 174.0
+margin_top = 254.0
+margin_right = 424.0
+margin_bottom = 318.0
+theme = ExtResource( 14 )
+text = "Score :"
 __meta__ = {
 "_edit_use_anchors_": false
 }
