@@ -17,7 +17,7 @@ func init(_position, _radius=radius):
 	$CollisionShape2D.shape = $CollisionShape2D.shape.duplicate()
 	$CollisionShape2D.shape.radius = radius
 	var img_size = $Sprite.texture.get_size().x/2
-	$Sprite.scale = Vector2(1,1) * radius / img_size
+	$Sprite.scale = Vector2(1.5,1.5) * radius / img_size
 	orbit_position.position.x = radius + 25
 	rotation_speed *= muter
 	print(muter)

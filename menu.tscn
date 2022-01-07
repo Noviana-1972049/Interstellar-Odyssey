@@ -1,19 +1,20 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://menu.gd" type="Script" id=1]
 [ext_resource path="res://tema hero.wav" type="AudioStream" id=2]
 [ext_resource path="res://startmenu.theme" type="Theme" id=3]
 [ext_resource path="res://Assets/GameOver.png" type="Texture" id=4]
 [ext_resource path="res://label.theme" type="Theme" id=5]
-[ext_resource path="res://Assets/planet3.png" type="Texture" id=6]
-[ext_resource path="res://Assets/planet2.png" type="Texture" id=7]
-[ext_resource path="res://Assets/planet6.png" type="Texture" id=8]
-[ext_resource path="res://Assets/planet8.png" type="Texture" id=9]
-[ext_resource path="res://Assets/planet7.png" type="Texture" id=10]
-[ext_resource path="res://Assets/planet5.png" type="Texture" id=11]
-[ext_resource path="res://Assets/planet4.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Planet/6.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Planet/13.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Planet/7.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Planet/31.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Planet/17.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Planet/27.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Planet/2.png" type="Texture" id=12]
 [ext_resource path="res://highscore.theme" type="Theme" id=13]
 [ext_resource path="res://yourscore.theme" type="Theme" id=14]
+[ext_resource path="res://Assets/Planet/24.png" type="Texture" id=15]
 
 [sub_resource type="Shader" id=4]
 code = "shader_type canvas_item;
@@ -115,9 +116,9 @@ texture = SubResource( 8 )
 centered = false
 
 [node name="Sprite6" type="Sprite" parent="Control"]
-position = Vector2( 92, 226 )
-scale = Vector2( 0.0585937, 0.0585937 )
-texture = ExtResource( 11 )
+position = Vector2( 86, 228 )
+scale = Vector2( 0.363739, 0.363739 )
+texture = ExtResource( 15 )
 
 [node name="Sprite" type="Sprite" parent="Control"]
 position = Vector2( 243, 182 )
@@ -125,14 +126,14 @@ scale = Vector2( 0.207031, 0.207031 )
 texture = ExtResource( 4 )
 
 [node name="Sprite5" type="Sprite" parent="Control"]
-position = Vector2( 127, 510 )
-scale = Vector2( 0.0742187, 0.0742187 )
+position = Vector2( 133, 492 )
+scale = Vector2( 0.502564, 0.502564 )
 texture = ExtResource( 12 )
 
 [node name="Sprite4" type="Sprite" parent="Control"]
-position = Vector2( 386, 615 )
-scale = Vector2( 0.0751953, 0.0751953 )
-texture = ExtResource( 6 )
+position = Vector2( 384, 615 )
+scale = Vector2( 0.490617, 0.490617 )
+texture = ExtResource( 8 )
 
 [node name="restartButton" type="Button" parent="Control"]
 anchor_right = 1.0
@@ -161,29 +162,29 @@ __meta__ = {
 }
 
 [node name="Sprite3" type="Sprite" parent="Control"]
-position = Vector2( 74, 704 )
-scale = Vector2( 0.0546875, 0.0546875 )
-texture = ExtResource( 7 )
+position = Vector2( 94, 726 )
+scale = Vector2( 0.389162, 0.389162 )
+texture = ExtResource( 6 )
 
 [node name="Sprite7" type="Sprite" parent="Control"]
-position = Vector2( 153, 8.00005 )
-scale = Vector2( 0.078125, 0.078125 )
-texture = ExtResource( 8 )
-
-[node name="Sprite8" type="Sprite" parent="Control"]
-position = Vector2( 338, 81 )
-scale = Vector2( 0.0478515, 0.0478515 )
-texture = ExtResource( 10 )
-
-[node name="Sprite9" type="Sprite" parent="Control"]
-position = Vector2( 374, 307 )
-scale = Vector2( 0.0751953, 0.0751953 )
+position = Vector2( 157, 22 )
+scale = Vector2( 0.433608, 0.433608 )
 texture = ExtResource( 9 )
 
+[node name="Sprite8" type="Sprite" parent="Control"]
+position = Vector2( 339, 84 )
+scale = Vector2( 0.261963, 0.261963 )
+texture = ExtResource( 11 )
+
+[node name="Sprite9" type="Sprite" parent="Control"]
+position = Vector2( 392, 317 )
+scale = Vector2( 0.403052, 0.403052 )
+texture = ExtResource( 10 )
+
 [node name="Sprite10" type="Sprite" parent="Control"]
-position = Vector2( 272, 827 )
-scale = Vector2( 0.0888672, 0.0888672 )
-texture = ExtResource( 8 )
+position = Vector2( 277, 850 )
+scale = Vector2( 0.564434, 0.564434 )
+texture = ExtResource( 7 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

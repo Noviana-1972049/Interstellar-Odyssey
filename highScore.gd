@@ -8,6 +8,6 @@ func highScore():
 		highscore = score
 	return highscore
 	
-func score():
+func scoree():
 	return score
 
