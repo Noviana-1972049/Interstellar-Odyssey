@@ -11,6 +11,7 @@ onready var timer = get_node("Timer")
 
 func _ready():
 	new_game()
+	HighScore.load_score()
 	if $theme.playing == false:
 		$theme.play()
 	
@@ -45,10 +46,12 @@ func _on_Jumper_captured(object):
 	$CanvasLayer.UpdateCombo(combo)
 	$CanvasLayer.UpdatePoint(BOING * combo)
 	print(combo)
-
 	call_deferred("spawn_circle")
 
 func _on_Timer_timeout():
 	if combo != 1:
 		combo -= 1
 		$CanvasLayer.UpdateCombo(combo)
+		
+
+		
