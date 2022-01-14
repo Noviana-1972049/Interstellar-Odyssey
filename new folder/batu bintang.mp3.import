@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/batu bintang.mp3-dfd23d9e6071d71db6e26ccb279e4bae.mp3str"
+
+[deps]
+
+source_file="res://new folder/batu bintang.mp3"
+dest_files=[ "res://.import/batu bintang.mp3-dfd23d9e6071d71db6e26ccb279e4bae.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

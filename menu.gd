@@ -10,4 +10,4 @@ func _on_restartButton_pressed():
 	get_tree().change_scene("res://Main.tscn")
 
 func _on_quitButton_pressed():
-	get_tree().quit()
+	get_tree().change_scene("res://Startmenu.tscn")
